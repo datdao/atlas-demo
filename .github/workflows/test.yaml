@@ -27,4 +27,3 @@ jobs:
         with:
             dir: file://migrations_destructive
             dev-url: sqlite://file.db?mode=memory
-            dir-name: test-dir-sqlite
