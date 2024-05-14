@@ -21,9 +21,8 @@ jobs:
         with:
           fetch-depth: 0
       - uses: ariga/setup-atlas@v0
-        with:
-            cloud-token: ${{ secrets.ATLAS_CLOUD_TOKEN }}
       - uses: ariga/atlas-action/migrate/lint@v1
         with:
             dir: file://migrations_destructive
             dev-url: sqlite://file.db?mode=memory
+        
